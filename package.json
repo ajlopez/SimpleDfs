@@ -1,0 +1,26 @@
+{
+  "name": "simpledfs",
+  "description": "simpledfs, simple data frames in JavaScript, WIP",
+  "keywords": [
+    "data frame",
+    "pandas"
+  ],
+  "version": "0.0.1alpha",
+  "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajlopez/simpledfs.git"
+  },
+  "main": "./lib/simpledfs.js",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "scripts": {
+    "test": "simpleunit ./test -r"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "simpleunit": "0.0.8"
+  }
+}
