@@ -1,8 +1,8 @@
 
 const dfs = require('../lib/dfs');
 
-exports['create data frame from data'] = function (test) {
-    const df = dfs.df([ [ 'country', 'year', 'pop' ], [ 'Afganistan', 1980, 10200300 ]]);
+exports['create data frame from columns and data'] = function (test) {
+    const df = dfs.df([ [ 'Afganistan', 1980, 10200300 ] ], [ 'country', 'year', 'pop' ]);
     
     test.ok(df);
     test.equal(typeof df, 'object');
@@ -10,7 +10,7 @@ exports['create data frame from data'] = function (test) {
 };
 
 exports['get column names'] = function (test) {
-    const df = dfs.df([ [ 'country', 'year', 'pop' ], [ 'Afganistan', 1980, 10200300 ]]);
+    const df = dfs.df([ [ 'Afganistan', 1980, 10200300 ] ], [ 'country', 'year', 'pop' ]);
     
     test.deepEqual(df.columns(), [ 'country', 'year', 'pop' ]);
 };
