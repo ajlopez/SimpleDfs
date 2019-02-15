@@ -8,6 +8,9 @@ TBD
 
 ## References
 
+- [Pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+- [pandas.Index](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Index.html)
+
 TBD
 
 ## License
