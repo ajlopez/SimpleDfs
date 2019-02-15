@@ -15,3 +15,9 @@ exports['get column names'] = function (test) {
     test.deepEqual(df.columns(), [ 'country', 'year', 'pop' ]);
 };
 
+exports['get index labels'] = function (test) {
+    const df = dfs.df([ [ 'Afganistan', 1980, 10200300 ] ], [ 'country', 'year', 'pop' ]);
+    
+    test.deepEqual(df.index(), [ 0 ]);
+};
+
